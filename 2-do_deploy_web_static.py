@@ -5,11 +5,11 @@ using the function (do_deploy:)
 """
 import os
 from fabric.api import put, run, env
-env.hosts = ['34.224.26.174', '18.208.221.76']
+env.hosts = ['34.230.10.59', '54.92.193.250']
 
 
 def do_deploy(archive_path):
-    """
+    """OOB
     Distribution to my servers
     """
     if archive_path is None or not os.path.exists(archive_path):
